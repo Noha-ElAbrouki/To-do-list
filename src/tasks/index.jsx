@@ -84,7 +84,7 @@ const Task = () => {
     const getColor = (etat) => etat === 'En cours' ? 'red' : 'green'
 
     return (
-        <div className={classes.containerTasks}>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '85vh' }}>
             <Search currentTasks={currentTasks} setSearchedTasks={setSearchedTasks} />
             <Paper elevation={3} sx={{ minHeight: '85vh' }} >
                 <PlanificationTask
