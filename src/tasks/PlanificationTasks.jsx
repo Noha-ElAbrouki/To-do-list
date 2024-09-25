@@ -11,7 +11,7 @@ const PlanificationTask = ({ label, title, onClick, onChange, value, variant = '
     const classes = useStyles()
 
     return (
-        <div className={classes.addContainer}>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
             <TextField
                 id="outlined-basic"
                 label={label}
